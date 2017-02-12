@@ -1,14 +1,14 @@
-import { NgSeedPage } from './app.po';
+import { XysailingPage } from './app.po';
 
-describe('ng-seed App', function() {
-  let page: NgSeedPage;
+describe('xysailing App', function() {
+  let page: XysailingPage;
 
   beforeEach(() => {
-    page = new NgSeedPage();
+    page = new XysailingPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('ng-seed works!');
+    expect(page.getParagraphText()).toEqual('xysailing works!');
   });
 });

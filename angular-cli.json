@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.24",
-    "name": "ng-seed"
+    "name": "xysailing"
   },
   "apps": [
     {
@@ -15,12 +15,16 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "ng-seed",
+      "prefix": "xysailing",
       "mobile": false,
       "styles": [
-        "styles.scss"
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "styles/styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
@@ -44,16 +48,16 @@
     "styleExt": "scss",
     "prefixInterfaces": false,
     "inline": {
-      "style": false,
+      "style": true,
       "template": false
     },
     "spec": {
       "class": false,
-      "component": true,
-      "directive": true,
+      "component": false,
+      "directive": false,
       "module": false,
-      "pipe": true,
-      "service": true
+      "pipe": false,
+      "service": false
     }
   }
 }

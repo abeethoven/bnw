@@ -1,11 +1,11 @@
 import { browser, element, by } from 'protractor';
 
-export class NgSeedPage {
+export class XysailingPage {
   navigateTo() {
     return browser.get('/');
   }
 
   getParagraphText() {
-    return element(by.css('ng-seed-root h1')).getText();
+    return element(by.css('xysailing-root h1')).getText();
   }
 }
