@@ -7,14 +7,12 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var index = require('./routes/index');
-var crew = require('./routes/crew');
-var boat = require('./routes/boat');
 
 var app = express();
-mongoose.connect('localhost:27017/xysdb');
+//mongoose.connect('localhost:27017/xysdb');
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'dist'));
 app.set('view engine', 'hbs');
 
 // uncomment after placing your favicon in /public
@@ -25,8 +23,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.use('/crew', crew);
-app.use('/boat', boat);
 app.use('/', index);
 
 // catch 404 and forward to error handler

@@ -1,14 +1,14 @@
-import { XysailingPage } from './app.po';
+import { bnwPage } from './app.po';
 
-describe('xysailing App', function() {
-  let page: XysailingPage;
+describe('bnw App', function() {
+  let page: bnwPage;
 
   beforeEach(() => {
-    page = new XysailingPage();
+    page = new bnwPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('xysailing works!');
+    expect(page.getParagraphText()).toEqual('bnw works!');
   });
 });
